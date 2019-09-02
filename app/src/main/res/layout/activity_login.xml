@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@android:color/holo_green_dark"
     android:orientation="vertical"
     tools:context=".loginActivity">
 
@@ -35,6 +35,7 @@
         android:layout_marginRight="25dp"
         android:background="@drawable/edit_bg"
         android:gravity="center"
+        android:lineHeight="50dp"
         android:hint="请输入用户名" />
 
     <EditText
@@ -42,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginLeft="25dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginRight="25dp"
         android:background="@drawable/edit_bg"
         android:gravity="center"
@@ -51,6 +53,7 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="40px"
         android:layout_marginRight="25dp"

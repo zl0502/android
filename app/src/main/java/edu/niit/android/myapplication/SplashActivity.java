@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
         //1.获取需要的控件
         tvVersion=findViewById(R.id.tv_version);
         //2.获取活设置控件的值
-        String version=tvVersion.getText().toString();
+        String version=tvVersion.getText().toString(  );
         try {
             PackageInfo info= getPackageManager().getPackageInfo(getPackageName(),0);
             tvVersion.setText("版本号："+info.versionName);
@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
         TimerTask task=new TimerTask() {
             @Override
             public void run() {
-                    Intent intent=new Intent(SplashActivity.this,MainActivity.class);
+                    Intent intent=new Intent(SplashActivity.this,loginActivity.class);
                     startActivity(intent);
             }
         };
